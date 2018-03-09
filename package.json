@@ -14,7 +14,9 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "highlight.js": "^9.12.0",
     "vue": "^2.5.2",
+    "vue-markdown": "^2.2.4",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
@@ -54,6 +56,7 @@
     "jest-serializer-vue": "^0.3.0",
     "nightwatch": "^0.9.12",
     "node-notifier": "^5.1.2",
+    "node-sass": "^4.7.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
     "portfinder": "^1.0.13",
@@ -61,13 +64,16 @@
     "postcss-loader": "^2.0.8",
     "postcss-url": "^7.2.1",
     "rimraf": "^2.6.0",
+    "sass-loader": "^6.0.7",
     "selenium-server": "^3.0.1",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
+    "text-loader": "0.0.1",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
     "vue-jest": "^1.0.2",
     "vue-loader": "^13.3.0",
+    "vue-markdown-loader": "^2.4.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",

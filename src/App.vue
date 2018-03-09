@@ -1,23 +1,47 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  <div class="app">
+    <div class="app-header">
+      <button class="sidebar-toggle"
+        v-bind:class="{active: isToggle}"
+        v-on:click="toggle"
+      >
+        <i class="iconfont icon-list"></i>
+        <i class="iconfont icon-close"></i>
+      </button>
+      <h1>vui</h1>
+    </div>
+    <div class="app-info">
+      <ul class="aside"
+        v-bind:class="{active: isToggle}"
+        v-on:click="isToggle = false"
+      >
+        <router-link to="/button" tag="li">button</router-link>
+      </ul>
+      <div class="main">
+        <vue-markdown>
+          <ly-button></ly-button>
+        </vue-markdown>
+        <router-view></router-view>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      isToggle: false
+    }
+  },
+  methods: {
+    toggle: function () {
+      this.isToggle = !this.isToggle
+    }
+  }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

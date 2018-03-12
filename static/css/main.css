@@ -16,6 +16,8 @@ a{text-decoration:none;}
 .app-header .iconfont{font-size:20px;color:#fff;}
 .app-info,.main{height:100%;}
 .main{background:#fff;padding:1rem;overflow:auto;}
+.main h3{font-size:16px;color:#333;font-weight:normal;padding:10px 0;position:relative;}
+.main h3:before{content:"";display:inline-block;width:4px;height:16px;background:#4a8bfc;position:absolute;left:-1rem;top:50%;margin-top:-8px;}
 
 .aside{position:fixed;left:0;top:0;bottom:0;width:230px;top:60px;background:#fff;transform:translateX(-100%);transition:0.3s;}
 .aside.active{transform:translateX(0);box-shadow:0 0 5px rgba(0,0,0,0.3);}

@@ -1,0 +1,38 @@
+$--color-primary: #409EFF;
+$--color-danger: #F56C6C;
+$--color-success: #67C23A;
+$--color-info: #909399;
+$--color-warning: #E6A23C;
+
+$--color-white: #fff;
+$--color-3: #333;
+$--color-6: #666;
+$--color-9: #999;
+
+$--border-radius-base: 4px;
+$--border-width-base: 1px;
+$--border-style-base: solid;
+$--border-color-base: $--color-primary;
+$--border-base: $--border-width-base $--border-style-base $--border-color-base;
+
+// button
+$--button-font-size: 14px;
+$--button-border-radius: $--border-radius-base;
+$--button-default-color: $--color-white;
+$--button-default-fill: $--color-primary;
+$--button-default-border: $--border-base;
+
+$--button-padding-vertical: 12px;
+$--button-padding-horizontal: 20px;
+
+$--button-medium-padding-vertical: 10px;
+$--button-medium-padding-horizontal: 20px;
+
+$--button-small-padding-vertical: 9px;
+$--button-small-padding-horizontal: 15px;
+
+$--button-mini-padding-vertical: 7px;
+$--button-mini-padding-horizontal: 10px;
+
+
+

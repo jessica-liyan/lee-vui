@@ -1,7 +1,7 @@
-import LyButton from './button';
+import LyButton from './button'
 
-LyButton.install = function(Vue) {
-  Vue.component(LyButton.name, LyButton);
-};
+LyButton.install = function (Vue) {
+  Vue.component(LyButton.name, LyButton)
+}
 
-export default LyButton;
+export default LyButton

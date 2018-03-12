@@ -1,0 +1,75 @@
+@import './common/var.scss';
+
+@mixin button{
+  font-size: $--button-font-size;
+  padding: $--button-padding-vertical $--button-padding-horizontal;
+  border-radius: $--button-border-radius;
+  border: $--button-default-border;
+  background: $--button-default-fill;
+  color: $--button-default-color;
+  transition:0.3s;
+}
+
+@mixin button-variant($color){
+  border-color: $color;
+  background-color: $color;
+  color: #fff;
+  &.is-plain{
+    @include button-plain($color)
+  }
+  &.is-round{
+    border-radius:20px;
+  }
+  &:active{
+    background-color: mix($--color-white, $color, 20%);
+    border-color:mix($--color-white, $color, 20%);
+  }
+}
+
+@mixin button-plain($color){
+  border-color: $color;
+  background-color: #fff;
+  color: $color;
+  &:active{
+    background-color: #fff;
+    border-color:mix($--color-white, $color, 30%);
+    color:mix($--color-white, $color, 30%);
+  }
+}
+
+@mixin button-size($padding-vertical, $padding-horizontal){
+  padding: $padding-vertical $padding-horizontal;
+  &.is-round{
+    border-radius:20px;
+  }
+}
+
+.e-button{
+  display: inline-block;
+  vertical-align:middle;
+  text-align:center;
+  line-height:1;
+  margin:5px;
+  @include button;
+  &.e-button--primary{
+    @include button-variant($--color-primary)
+  }
+  &.e-button--success{
+    @include button-variant($--color-success)
+  }
+  &.e-button--danger{
+    @include button-variant($--color-danger)
+  }
+  &.e-button--info{
+    @include button-variant($--color-info)
+  }
+  &.e-button--medium{
+    @include button-size($--button-medium-padding-vertical, $--button-medium-padding-horizontal)
+  }
+  &.e-button--small{
+    @include button-size($--button-small-padding-vertical, $--button-small-padding-horizontal)
+  }
+  &.e-button--mini{
+    @include button-size($--button-mini-padding-vertical, $--button-mini-padding-horizontal)
+  }
+}

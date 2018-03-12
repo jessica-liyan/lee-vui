@@ -18,9 +18,6 @@
         <router-link to="/button" tag="li">button</router-link>
       </ul>
       <div class="main">
-        <vue-markdown>
-          <ly-button></ly-button>
-        </vue-markdown>
         <router-view></router-view>
       </div>
     </div>

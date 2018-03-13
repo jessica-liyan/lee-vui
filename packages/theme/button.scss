@@ -7,7 +7,7 @@
   border: $--button-default-border;
   background: $--button-default-fill;
   color: $--button-default-color;
-  transition:0.3s;
+  transition:0.1s;
 }
 
 @mixin button-variant($color){
@@ -15,14 +15,38 @@
   background-color: $color;
   color: #fff;
   &.is-plain{
-    @include button-plain($color)
+    @include button-plain($color);
+    &.is-disabled{
+      &, &:hover, &:focus, &:active{
+        background-color: mix($--color-white, $color, 90%);
+        border-color:mix($--color-white, $color, 80%);
+        color:mix($--color-white, $color, 40%); 
+      }
+    }
   }
   &.is-round{
     border-radius:20px;
   }
-  &:active{
+  &.is-block{
+    width:100%;
+  }
+  &.is-disabled{
+    &, &:hover, &:focus, &:active{
+      cursor:not-allowed;
+      background-color: mix($--color-white, $color, 50%);
+      border-color:mix($--color-white, $color, 50%);
+      color:mix($--color-white, $color, 90%);
+    }
+  }
+  &:hover, &:focus{
     background-color: mix($--color-white, $color, 20%);
-    border-color:mix($--color-white, $color, 20%);
+    border-color: mix($--color-white, $color, 20%);
+    color: #fff;
+  }
+  &:active{
+    background-color: mix($--color-black, $color, 20%);
+    border-color:mix($--color-black, $color, 20%);
+    color:mix($--color-white, $color, 50%);
   }
 }
 
@@ -30,10 +54,15 @@
   border-color: $color;
   background-color: #fff;
   color: $color;
+  &:hover, &:focus{
+    background-color: #fff;
+    border-color: mix($--color-white, $color, 20%);
+    color: mix($--color-white, $color, 20%);
+  }
   &:active{
     background-color: #fff;
-    border-color:mix($--color-white, $color, 30%);
-    color:mix($--color-white, $color, 30%);
+    border-color:mix($--color-white, $color, 40%);
+    color:mix($--color-white, $color, 40%);
   }
 }
 
@@ -71,5 +100,22 @@
   }
   &.e-button--mini{
     @include button-size($--button-mini-padding-vertical, $--button-mini-padding-horizontal)
+  }
+  &.e-button--text{
+    border-color:transparent;
+    color:$--color-primary;
+    background:transparent;
+    padding-left:0;
+    padding-right:0;
+    &:hover, &:focus{
+      color:$--color-primary;
+      border-color:transparent;
+      background:transparent;
+    }
+    &:active{
+      color:mix($--color-black, $--color-primary, 20%);
+      border-color:transparent;
+      background:transparent;
+    }
   }
 }

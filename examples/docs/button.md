@@ -37,6 +37,7 @@
 <ly-button size="small" plain>搜索</ly-button>
 <ly-button size="mini" plain>搜索</ly-button>
 ```
+
 ### 圆角按钮
 <ly-button round>搜索</ly-button>
 <ly-button size="medium" round>搜索</ly-button>
@@ -48,3 +49,29 @@
 <ly-button size="small" round>搜索</ly-button>
 <ly-button size="mini" round>搜索</ly-button>
 ```
+
+### 块级按钮
+<ly-button block>搜索</ly-button>
+<ly-button block plain>搜索</ly-button>
+
+### 原始type=button/submit/reset
+<ly-button nativeType="submit">搜索</ly-button>
+
+### 字体按钮
+<ly-button type="text">搜索</ly-button>
+
+### 自定义类
+<ly-button class="btn">搜索</ly-button>
+
+### 禁用状态
+<ly-button disabled>搜索</ly-button>
+<ly-button disabled type="danger">搜索</ly-button>
+<ly-button plain disabled>搜索</ly-button>
+<ly-button plain disabled type="danger">搜索</ly-button>
+
+### 渐变按钮
+<ly-button block :gradient="['#1D62F0', '#19D5FD']">搜索</ly-button>
+<ly-button block :gradient="['#6F1BFE', '#9479DF']">搜索</ly-button>
+
+### 点击事件
+<ly-button link="/test">搜索</ly-button>

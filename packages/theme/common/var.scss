@@ -5,6 +5,7 @@ $--color-info: #909399;
 $--color-warning: #E6A23C;
 
 $--color-white: #fff;
+$--color-black: #000;
 $--color-3: #333;
 $--color-6: #666;
 $--color-9: #999;
@@ -16,6 +17,7 @@ $--border-color-base: $--color-primary;
 $--border-base: $--border-width-base $--border-style-base $--border-color-base;
 
 // button
+
 $--button-font-size: 14px;
 $--button-border-radius: $--border-radius-base;
 $--button-default-color: $--color-white;

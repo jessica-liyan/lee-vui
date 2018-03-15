@@ -1,0 +1,8 @@
+@import './common/var.scss';
+
+.group{
+  background:#fff;
+  position:relative;
+  @include line-top;
+  @include line-bottom;
+}

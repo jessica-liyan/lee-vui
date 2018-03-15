@@ -10,8 +10,24 @@ export default new Router({
       path: '/'
     },
     {
-      path: '/button',
+      path: `/button`,
       component: r => require.ensure([], () => r(require('../docs/button.md')))
+    },
+    {
+      path: `/group`,
+      component: r => require.ensure([], () => r(require('../docs/group.md')))
+    },
+    {
+      path: `/cell`,
+      component: r => require.ensure([], () => r(require('../docs/cell.md')))
+    },
+    {
+      path: `/radio`,
+      component: r => require.ensure([], () => r(require('../docs/radio.md')))
+    },
+    {
+      path: `/checkbox`,
+      component: r => require.ensure([], () => r(require('../docs/checkbox.md')))
     }
   ]
 })

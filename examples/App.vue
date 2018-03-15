@@ -15,7 +15,11 @@
         v-bind:class="{active: isToggle}"
         v-on:click="isToggle = false"
       >
-        <router-link to="/button" tag="li">button</router-link>
+        <router-link
+          v-for="(item,index) in compos"
+          :key="index"
+          :to="`/${item}`"
+          tag="li">{{item}}</router-link>
       </ul>
       <div class="main">
         <router-view></router-view>
@@ -29,7 +33,14 @@ export default {
   name: 'App',
   data () {
     return {
-      isToggle: false
+      isToggle: false,
+      compos: [
+        'button',
+        'group',
+        'cell',
+        'radio',
+        'checkbox'
+      ]
     }
   },
   methods: {

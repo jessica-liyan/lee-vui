@@ -52,9 +52,7 @@ export default {
   },
   methods: {
     handleClick (evt) {
-      console.log('click', this)
       !this.disabled && this.$emit('click', evt)
-      this.$router.push(this.link)
     }
   }
 }

@@ -4,14 +4,10 @@ import router from './router'
 import VueMarkdown from 'vue-markdown'
 import hljs from 'highlight.js'
 import 'highlight.js/styles/googlecode.css'
-
-import LyButton from '../packages/button/index'
+import Common from './util/util' // 公共方法
+import Components from '../packages/index' // 所有自定义组件
 
 Vue.config.productionTip = false
-
-Vue.use(VueMarkdown)
-
-Vue.component('vue-markdown', VueMarkdown)
 
 Vue.directive('highlight', (el) => {
   let blocks = el.querySelectorAll('pre code')
@@ -20,7 +16,10 @@ Vue.directive('highlight', (el) => {
   })
 })
 
-Vue.use(LyButton)
+Vue.use(Common)
+Vue.use(Components)
+Vue.use(VueMarkdown)
+Vue.component('vue-markdown', VueMarkdown)
 
 /* eslint-disable no-new */
 new Vue({

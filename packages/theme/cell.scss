@@ -1,0 +1,36 @@
+@import './common/var.scss';
+
+.cell{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:$--cell-padding-vertical $--cell-padding-horizontal;
+  position: relative;
+  font-size:$--cell-font-size;
+  @include line-top;
+  &:before{
+    left:15px;
+  }
+  &:first-child:before{
+    height:0;
+  }
+  &.cell-tap-active{
+    @include tap-active;
+  }
+  .cell-hd{
+    label{
+      display:block;
+      color:$--cell-label-color;
+    }
+  }
+  .cell-bd{
+    flex:1;
+    text-align:right;
+    color:$--cell-value-color;
+    .iconfont{
+      font-size:18px;
+      color:$--color-gray;
+    }
+  }
+
+}

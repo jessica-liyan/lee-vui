@@ -6,6 +6,7 @@ $--color-warning: #E6A23C;
 
 $--color-white: #fff;
 $--color-black: #000;
+$--color-gray: #ccc;
 $--color-3: #333;
 $--color-6: #666;
 $--color-9: #999;
@@ -16,9 +17,44 @@ $--border-style-base: solid;
 $--border-color-base: $--color-primary;
 $--border-base: $--border-width-base $--border-style-base $--border-color-base;
 
-// button
+$--line1px-color: #d9d9d9;
 
-$--button-font-size: 14px;
+@mixin line-top{
+  &:before{
+    content:"";
+    display: inline-block;
+    height:1px;
+    background:$--line1px-color;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    transform:scaleY(0.5);
+  }
+}
+@mixin line-bottom{
+  &:after{
+    content:"";
+    display: inline-block;
+    height:1px;
+    background:$--line1px-color;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    transform:scaleY(0.5);
+  }
+}
+
+$--tap-highlight-color:rgba(0, 0, 0, 0.05);
+@mixin tap-active{
+  &:active{
+    background:$--tap-highlight-color;
+  }
+}
+
+// button
+$--button-font-size: 15px;
 $--button-border-radius: $--border-radius-base;
 $--button-default-color: $--color-white;
 $--button-default-fill: $--color-primary;
@@ -35,6 +71,16 @@ $--button-small-padding-horizontal: 15px;
 
 $--button-mini-padding-vertical: 7px;
 $--button-mini-padding-horizontal: 10px;
+
+// cell
+$--cell-font-size: 15px;
+$--cell-label-color: $--color-3;
+$--cell-value-color: $--color-9;
+$--cell-padding-vertical: 12px;
+$--cell-padding-horizontal: 15px;
+
+
+
 
 
 

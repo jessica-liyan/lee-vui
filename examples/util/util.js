@@ -1,6 +1,11 @@
 export default {
   install: function (Vue, opt) {
     Vue.mixin({
+      data () {
+        return {
+          show: false
+        }
+      },
       methods: {
         test () {
           console.log('这是一个公共的方法')

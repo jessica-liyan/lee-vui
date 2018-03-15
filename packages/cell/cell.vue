@@ -33,8 +33,8 @@ export default {
     labelStyle () {
       return {
         width: this.$parent.labelWidth,
-        textAlign:this.$parent.labelAlign,
-        marginRight:this.$parent.labelMarginRight
+        textAlign: this.$parent.labelAlign,
+        marginRight: this.$parent.labelMarginRight
       }
     }
   },

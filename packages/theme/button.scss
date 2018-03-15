@@ -78,7 +78,6 @@
   vertical-align:middle;
   text-align:center;
   line-height:1;
-  margin:5px;
   @include button;
   &.e-button--primary{
     @include button-variant($--color-primary)

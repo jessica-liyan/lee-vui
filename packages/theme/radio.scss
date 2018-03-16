@@ -1,2 +1,11 @@
 @import './common/var.scss';
 
+.radio{
+  @include tap-active;
+  .icon-check{
+    opacity:0;
+  }
+  input:checked + .icon-check{
+    opacity:1;
+  }
+}

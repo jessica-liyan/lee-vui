@@ -9,7 +9,6 @@
   font-size:$--cell-font-size;
   background:#fff;
   @include line-top;
-  
   &:first-child:before{
     height:0;
   }

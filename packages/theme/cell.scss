@@ -7,20 +7,29 @@
   padding:$--cell-padding-vertical $--cell-padding-horizontal;
   position: relative;
   font-size:$--cell-font-size;
+  background:#fff;
   @include line-top;
-  &:before{
-    left:15px;
-  }
+  
   &:first-child:before{
     height:0;
+  }
+  &.cell-indent:before{
+    left:15px;
   }
   &.cell-tap-active{
     @include tap-active;
   }
   .cell-hd{
+    display:flex;
+    align-items:center;
     label{
       display:block;
       color:$--cell-label-color;
+    }
+    .label-desc{
+      font-size:$--cell-label-desc-font-size;
+      color:$--cell-label-desc-color;
+      margin-top:$--cell-label-desc-margin-top;
     }
   }
   .cell-bd{
@@ -28,9 +37,17 @@
     text-align:right;
     color:$--cell-value-color;
     .iconfont{
+      display: inline-block;
       font-size:18px;
       color:$--color-gray;
+      transition: 0.3s;
+      transform-origin:center center;
+      &.down{
+        transform:rotate(90deg);
+      }
+      &.up{
+        transform:rotate(-90deg);
+      }
     }
   }
-
 }

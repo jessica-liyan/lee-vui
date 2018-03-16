@@ -30,6 +30,7 @@ $--line1px-color: #d9d9d9;
     right:0;
     top:0;
     transform:scaleY(0.5);
+    z-index:99;
   }
 }
 @mixin line-bottom{
@@ -43,6 +44,7 @@ $--line1px-color: #d9d9d9;
     right:0;
     bottom:0;
     transform:scaleY(0.5);
+    z-index:99;
   }
 }
 
@@ -73,12 +75,15 @@ $--button-mini-padding-vertical: 7px;
 $--button-mini-padding-horizontal: 10px;
 
 // cell
-$--cell-font-size: 15px;
+$--cell-font-size: 16px;
 $--cell-label-color: $--color-3;
 $--cell-value-color: $--color-9;
 $--cell-padding-vertical: 12px;
 $--cell-padding-horizontal: 15px;
 
+$--cell-label-desc-font-size: 13px;
+$--cell-label-desc-color: $--color-9;
+$--cell-label-desc-margin-top: 5px;
 
 
 

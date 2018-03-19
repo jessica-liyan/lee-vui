@@ -4,7 +4,8 @@ export default {
       data () {
         return {
           show: false,
-          show1: false
+          show1: false,
+          chosen: '支付宝'
         }
       },
       methods: {
@@ -14,6 +15,10 @@ export default {
         },
         back () {
           this.$router.go(-1)
+        },
+        // 父组件监听radio值的变化
+        input (data) {
+          console.log('radio变化', data)
         }
       }
     })

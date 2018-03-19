@@ -53,9 +53,6 @@ export default {
     }
   },
   methods: {
-  },
-  created () {
-    console.log(this.$parent.labelWidth)
   }
 }
 </script>

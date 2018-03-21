@@ -1,0 +1,2 @@
+webpackJsonp([1],{B6o2:function(t,e,s){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n={render:function(){var t=this.$createElement,e=this._self._c||t;return e("section",[e("h2",[this._v("switch")]),this._v(" "),e("h3",[this._v("基本用法")]),this._v(" "),e("group",[e("ly-switch",{attrs:{title:"开启某个功能"}})],1)],1)},staticRenderFns:[]},i=s("VU/8")(null,n,!1,null,null,null);e.default=i.exports},xMFX:function(t,e,s){t.exports=s("B6o2")}});
+//# sourceMappingURL=1.720ef274f4abe733baf9.js.map

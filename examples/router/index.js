@@ -22,12 +22,16 @@ export default new Router({
       component: r => require.ensure([], () => r(require('../docs/cell.md')))
     },
     {
-      path: `/radio`,
-      component: r => require.ensure([], () => r(require('../docs/radio.md')))
+      path: `/radiolist`,
+      component: r => require.ensure([], () => r(require('../docs/radiolist.md')))
     },
     {
-      path: `/checkbox`,
-      component: r => require.ensure([], () => r(require('../docs/checkbox.md')))
+      path: `/switch`,
+      component: r => require.ensure([], () => r(require('../docs/switch.md')))
+    },
+    {
+      path: `/checklist`,
+      component: r => require.ensure([], () => r(require('../docs/checklist.md')))
     }
   ]
 })

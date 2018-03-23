@@ -5,7 +5,12 @@ export default {
         return {
           show: false,
           show1: false,
-          chosen: '支付宝'
+          radio: '微信', // radio
+          radio1: 'alipay',
+          isCheck: true, // switch
+          selected: ['啤酒', '饮料'], // checklist
+          selected1: ['beer'],
+          selected2: [2]
         }
       },
       methods: {

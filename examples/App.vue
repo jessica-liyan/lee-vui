@@ -33,13 +33,15 @@ export default {
   name: 'App',
   data () {
     return {
+      chosen: 'male',
       isToggle: false,
       compos: [
         'button',
         'group',
         'cell',
-        'radio',
-        'checkbox'
+        'switch',
+        'radiolist',
+        'checklist'
       ]
     }
   },

@@ -1,13 +1,17 @@
 import LyButton from './button/index'
-import Radio from './radio/index'
+import RadioList from './radiolist/index.js'
 import Cell from './cell/index'
 import Group from './group/index'
+import LySwitch from './switch/index'
+import CheckList from './checklist/index'
 
 const components = [
   LyButton,
-  Radio,
+  RadioList,
   Cell,
-  Group
+  Group,
+  LySwitch,
+  CheckList
 ]
 
 const install = function (Vue, opt) {
@@ -23,7 +27,9 @@ const install = function (Vue, opt) {
 export default {
   install,
   LyButton,
-  Radio,
+  RadioList,
   Cell,
-  Group
+  Group,
+  LySwitch,
+  CheckList
 }

@@ -1,0 +1,34 @@
+@import './common/var.scss';
+
+.switch{
+  .switch-btn{
+    position: relative;
+    display: inline-block;
+    vertical-align:middle;
+    width:$--switch-button-width;
+    height:$--switch-button-height + 2px;
+    border:$--switch-button-border;
+    border-radius:$--switch-button-border-radius;
+    transition:0.1s;
+    &:before{
+      content:"";
+      display: inline-block;
+      width:$--switch-button-height;
+      height:$--switch-button-height;
+      background:#fff;
+      border-radius:50%;
+      position: absolute;
+      left:0;
+      top:0;
+      box-shadow:0 1px 3px $--switch-button-cicle-shadow-color;
+      transition:0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+    }
+    &:checked{
+      background:$--switch-button-checked-color;
+      border-color:$--switch-button-checked-color;
+    }
+    &:checked:before{
+      left:$--switch-button-width - $--switch-button-height -1px;
+    }
+  }
+}

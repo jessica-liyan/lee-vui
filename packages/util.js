@@ -18,3 +18,7 @@ export const getValueByKey = function (list, key) {
   })
   return match[0].value
 }
+
+export const createId = function () {
+  return Math.random().toString(36).substring(3, 8)
+}

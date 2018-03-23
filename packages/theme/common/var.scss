@@ -92,3 +92,11 @@ $--cell-circle-border-color: $--color-9;
 $--cell-icon-img-size: 20px;
 $--cell-icon-font-size: 20px;
 $--cell-icon-font-color: $--color-9;
+
+// switch
+$--switch-button-width: 50px;
+$--switch-button-height: 24px;
+$--switch-button-border-radius: $--switch-button-height/2;
+$--switch-button-border: 1px solid $--color-gray;
+$--switch-button-checked-color:$--color-success;
+$--switch-button-cicle-shadow-color: rgba(0, 0, 0, 0.4);

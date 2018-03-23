@@ -1,27 +1,16 @@
 @import './common/var.scss';
 
-.radio{
+.checkbox{
   @include tap-active;
   .icon-check{
-    color:$--color-white !important;
+    font-size:20px;
+    color:transparent!important;
   }
   .cell:before{
     height:1px!important;
   }
   input:checked + .icon-check{
     color: $--cell-checked-color !important;
-  }
-  .cell-hd{
-    img{
-      width:$--cell-icon-img-size;
-      height: $--cell-icon-img-size;
-      margin-right:10px;
-    }
-    .iconfont{
-      font-size:$--cell-icon-font-size;
-      color:$--cell-icon-font-color;
-      margin-right:10px;
-    }
   }
   &.is-round{
     .icon-check{

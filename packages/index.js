@@ -4,6 +4,8 @@ import Cell from './cell/index'
 import Group from './group/index'
 import LySwitch from './switch/index'
 import CheckList from './checklist/index'
+import {Checker, CheckerItem} from './checker/index'
+import {Tab, TabItem} from './tab/index'
 
 const components = [
   LyButton,
@@ -11,7 +13,11 @@ const components = [
   Cell,
   Group,
   LySwitch,
-  CheckList
+  CheckList,
+  Checker,
+  CheckerItem,
+  Tab,
+  TabItem
 ]
 
 const install = function (Vue, opt) {
@@ -31,5 +37,9 @@ export default {
   Cell,
   Group,
   LySwitch,
-  CheckList
+  CheckList,
+  Checker,
+  CheckerItem,
+  Tab,
+  TabItem
 }

@@ -1,0 +1,33 @@
+@import './common/var.scss';
+
+.checker{
+  display:flex;
+  align-items:middle;
+  background:#fff;
+  .checker-item{
+    padding: $--checker-padding-vertical $--checker-padding-horizontal;
+    border: $--checker-border;
+    margin:0 2px;
+    font-size: $--checker-font-size;
+    color: $--checker-font-color;
+    text-align:center;
+    box-sizing:border-box;
+    &.is-checked{
+      border-color:$--checker-checked-color;
+      color:$--checker-checked-color;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

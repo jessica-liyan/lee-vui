@@ -10,7 +10,26 @@ export default {
           isCheck: true, // switch
           selected: ['啤酒', '饮料'], // checklist
           selected1: ['beer'],
-          selected2: [2]
+          selected2: [2],
+          selected3: 'bj', // checker
+          selected4: ['bj', 'sz'], // checker
+          selected5: [{
+            key: 'bj',
+            value: '北京'
+          }, {
+            key: 'sh',
+            value: '上海'
+          }, {
+            key: 'gz',
+            value: '广州'
+          }, {
+            key: 'sz',
+            value: '深圳'
+          }],
+          selected6: null,
+          selected7: {key: 'bj', value: '北京'},
+          selected8: [{key: 'bj', value: '北京'}, {key: 'sh', value: '上海'}],
+          tabs: 0 // tab
         }
       },
       methods: {

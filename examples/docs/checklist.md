@@ -66,7 +66,7 @@
 ```
 ### 限制最大选中个数
 <group>
-  <check-list :options="['啤酒', '饮料', '八宝粥']" v-model="selected" :max="2"></check-list>
+  <check-list :options="['啤酒', '饮料', '八宝粥', '瓜子']" v-model="selected" :max="2"></check-list>
 </group>
 
 <ul class="description">
@@ -75,7 +75,7 @@
 
 ```html
 <group>
-  <check-list :options="['啤酒', '饮料', '八宝粥']" v-model="selected" :max="2"></check-list>
+  <check-list :options="['啤酒', '饮料', '八宝粥', '瓜子']" v-model="selected" :max="2"></check-list>
 </group>
 ```
 

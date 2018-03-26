@@ -1,2 +1,0 @@
-webpackJsonp([4],{"6fY7":function(t,e,s){t.exports=s("A08z")},A08z:function(t,e,s){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n={render:function(){var t=this.$createElement,e=this._self._c||t;return e("section",[e("h2",[this._v("checklist")]),this._v(" "),e("h3",[this._v("基本用法")]),this._v(" "),e("group",[e("check-list",{attrs:{options:["啤酒","饮料","八宝粥"]}})],1)],1)},staticRenderFns:[]},i=s("VU/8")(null,n,!1,null,null,null);e.default=i.exports}});
-//# sourceMappingURL=4.23dc6a3ecbbdea60eb0f.js.map

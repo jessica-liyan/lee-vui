@@ -22,3 +22,11 @@ export const getValueByKey = function (list, key) {
 export const createId = function () {
   return Math.random().toString(36).substring(3, 8)
 }
+
+export const isEqual = function (valueA, valueB) {
+  if (typeof valueA === 'number' || typeof valueA === 'string') {
+    return valueA === valueB
+  } else {
+    return JSON.stringify(valueA) === JSON.stringify(valueB)
+  }
+}

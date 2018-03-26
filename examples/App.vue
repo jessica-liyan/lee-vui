@@ -41,7 +41,9 @@ export default {
         'cell',
         'switch',
         'radiolist',
-        'checklist'
+        'checklist',
+        'checker',
+        'tab'
       ]
     }
   },

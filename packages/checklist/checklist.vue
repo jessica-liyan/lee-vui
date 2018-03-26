@@ -11,6 +11,7 @@
         <input type="checkbox"
           :id="`checkbox-${uuid}-${index}`"
           :value="getKey(item)"
+          :disabled="isDisabled(getKey(item))"
           v-model="currentValue">
         <i class="iconfont icon-check"></i>
       </cell>
@@ -39,18 +40,32 @@ export default {
       type: Array,
       required: true
     },
-    value: Array,
+    value: Array, // v-model中数组
     round: Boolean,
     max: Number
+  },
+  computed: {
+    valid () {
+      return this.currentValue.length <= this.max
+    }
   },
   methods: {
     getValue,
     getKey,
-    createId
+    createId,
+    isDisabled (key) { // 判断是否超出限制个数（不在选中范围内，且当前选中超出限制个数）
+      if (this.max > 1) {
+        return this.currentValue.indexOf(key) === -1 && this.currentValue.length >= this.max
+      }
+    }
   },
   watch: {
     currentValue (val) {
       this.$emit('input', val)
+      // 超出限制个数
+      if (!this.valid) {
+        this.$emit('on-error', {max: this.max})
+      }
     }
   }
 }

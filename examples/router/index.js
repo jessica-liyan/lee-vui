@@ -32,6 +32,14 @@ export default new Router({
     {
       path: `/checklist`,
       component: r => require.ensure([], () => r(require('../docs/checklist.md')))
+    },
+    {
+      path: `/checker`,
+      component: r => require.ensure([], () => r(require('../docs/checker.md')))
+    },
+    {
+      path: `/tab`,
+      component: r => require.ensure([], () => r(require('../docs/tab.md')))
     }
   ]
 })

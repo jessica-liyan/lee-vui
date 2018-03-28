@@ -6,6 +6,20 @@
   background:#fff;
   position: relative;
   @include line-bottom;
+  .tab-line{
+    position: absolute;
+    bottom:0;
+    transition:0.3s;
+    font-size:0;
+    text-align:center;
+    span{
+      display: inline-block;
+      vertical-align:middle;
+      width:100%;
+      height:2px;
+      background:$--tab-active-color;
+    }
+  }
   .tab-item{
     flex:1;
     text-align:center;
@@ -13,8 +27,15 @@
     color:$--tab-font-color;
     height:$--tab-height;
     line-height:$--tab-height;
+    position: relative;
     &.selected{
-      color:$--tab-active-color
+      color:$--tab-active-color;
+    }
+  }
+  &.scroll{
+    overflow-x:auto;
+    .tab-item{
+      flex: 0 0 25%;
     }
   }
 }

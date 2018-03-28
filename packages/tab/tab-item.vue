@@ -3,6 +3,7 @@
     :class="{
       'selected': isSelected
     }"
+    :style="customStyle"
     @click="handleClick"
   >
     <slot></slot>
@@ -17,6 +18,14 @@ export default {
       isSelected: false
     }
   },
+  computed: {
+    customStyle () {
+      return {
+        width: this.$parent.barWidth,
+        color: this.isSelected ? this.$parent.activeColor : this.$parent.defaultColor
+      }
+    }
+  },
   mounted () {
     this.$parent.updateIndex()
     this.isSelected = this.$parent.currentIndex === this.index
@@ -24,11 +33,7 @@ export default {
   methods: {
     handleClick () {
       this.$parent.currentIndex = this.index
-    }
-  },
-  watch: {
-    isSelected (val) {
-      console.log('isSelected变化了', val)
+      this.$emit('on-click', this.index)
     }
   }
 }

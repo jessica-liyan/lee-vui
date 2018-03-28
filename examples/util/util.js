@@ -33,6 +33,9 @@ export default {
         }
       },
       methods: {
+        getWidth (idx) {
+          return `${(idx + 2) * 10}px`
+        },
         test () {
           console.log('这是一个公共的方法')
           this.$router.push('button')
@@ -43,6 +46,12 @@ export default {
         // 父组件监听radio值的变化
         input (data) {
           console.log('radio变化', data)
+        },
+        handle (val, oldVal) {
+          console.log('on-change', val, oldVal)
+        },
+        itemHandle (val) {
+          console.log('当前点击', val)
         }
       }
     })

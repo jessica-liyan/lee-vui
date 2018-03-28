@@ -1,0 +1,10 @@
+@import './common/var.scss';
+
+.flex{
+  display:flex;
+  .flex-item{
+    flex:1;
+  }
+}
+
+

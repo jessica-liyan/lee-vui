@@ -6,6 +6,8 @@ import LySwitch from './switch/index'
 import CheckList from './checklist/index'
 import {Checker, CheckerItem} from './checker/index'
 import {Tab, TabItem} from './tab/index'
+import {ButtonTab, ButtonTabItem} from './button-tab/index'
+import {Flex, FlexItem} from './layout/index'
 
 const components = [
   LyButton,
@@ -17,7 +19,11 @@ const components = [
   Checker,
   CheckerItem,
   Tab,
-  TabItem
+  TabItem,
+  ButtonTab,
+  ButtonTabItem,
+  Flex,
+  FlexItem
 ]
 
 const install = function (Vue, opt) {
@@ -41,5 +47,9 @@ export default {
   Checker,
   CheckerItem,
   Tab,
-  TabItem
+  TabItem,
+  ButtonTab,
+  ButtonTabItem,
+  Flex,
+  FlexItem
 }

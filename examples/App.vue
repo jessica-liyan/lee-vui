@@ -36,6 +36,7 @@ export default {
       chosen: 'male',
       isToggle: false,
       compos: [
+        'layout',
         'button',
         'group',
         'cell',
@@ -43,7 +44,8 @@ export default {
         'radiolist',
         'checklist',
         'checker',
-        'tab'
+        'tab',
+        'button-tab'
       ]
     }
   },

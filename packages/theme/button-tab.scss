@@ -1,0 +1,43 @@
+@import './common/var.scss';
+
+.button-tab{
+  display:flex;
+  align-items:center;
+  .button-tab-item{
+    flex:1;
+    text-align:center;
+    line-height:1;
+    background:#fff;
+    font-size:$--button-tab-font-size;
+    color:$--button-tab-font-color;
+    padding:$--button-tab-padding-vertical $--button-tab-padding-horizontal;
+    border:$--button-tab-border;
+    border-left:0;
+    &:first-child{
+      border-left:$--button-tab-border;
+      border-radius:$--button-tab-border-radius 0 0 $--button-tab-border-radius;
+    }
+    &:last-child{
+      border-radius:0 $--button-tab-border-radius $--button-tab-border-radius 0;
+    }
+    &.active{
+      background: $--button-tab-active-color;
+      border-color:$--button-tab-active-color;
+      color:#fff;
+      box-shadow:-1px 0 0 0 $--button-tab-active-color;
+    }
+    &.active:first-child{
+      box-shadow:none!important;
+    }
+  }
+  &.round{
+    .button-tab-item{
+      &:first-child{
+        border-radius:$--button-tab-round-border-radius 0 0 $--button-tab-round-border-radius;
+      }
+      &:last-child{
+        border-radius:0 $--button-tab-round-border-radius $--button-tab-round-border-radius 0;
+      }
+    }
+  }
+}

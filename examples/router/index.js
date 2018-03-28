@@ -10,6 +10,10 @@ export default new Router({
       path: '/'
     },
     {
+      path: `/layout`,
+      component: r => require.ensure([], () => r(require('../docs/layout.md')))
+    },
+    {
       path: `/button`,
       component: r => require.ensure([], () => r(require('../docs/button.md')))
     },
@@ -40,6 +44,10 @@ export default new Router({
     {
       path: `/tab`,
       component: r => require.ensure([], () => r(require('../docs/tab.md')))
+    },
+    {
+      path: `/button-tab`,
+      component: r => require.ensure([], () => r(require('../docs/button-tab.md')))
     }
   ]
 })

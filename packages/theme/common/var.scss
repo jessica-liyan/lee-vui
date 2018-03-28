@@ -115,7 +115,15 @@ $--tab-font-color: $--color-3;
 $--tab-height: 50px;
 $--tab-active-color: $--color-primary;
 
-
+// button-tab
+$--button-tab-font-size: 15px;
+$--button-tab-font-color: $--color-3;
+$--button-tab-padding-vertical: 10px;
+$--button-tab-padding-horizontal: 15px;
+$--button-tab-border: 1px solid $--color-gray;
+$--button-tab-border-radius: 6px;
+$--button-tab-round-border-radius: ($--button-tab-font-size + $--button-tab-padding-vertical*2 + 2)/2;
+$--button-tab-active-color: $--color-primary;
 
 
 

@@ -29,7 +29,13 @@ export default {
           selected6: null,
           selected7: {key: 'bj', value: '北京'},
           selected8: [{key: 'bj', value: '北京'}, {key: 'sh', value: '上海'}],
-          tabs: 0 // tab
+          tabs: 0, // tab
+          itemStyle: {
+            padding: '10px',
+            fontSize: '14px',
+            color: '#333',
+            background: '#ddd'
+          }
         }
       },
       methods: {

@@ -48,6 +48,10 @@ export default new Router({
     {
       path: `/button-tab`,
       component: r => require.ensure([], () => r(require('../docs/button-tab.md')))
+    },
+    {
+      path: `/input`,
+      component: r => require.ensure([], () => r(require('../docs/input.md')))
     }
   ]
 })

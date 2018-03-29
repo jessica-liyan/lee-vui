@@ -45,7 +45,8 @@ export default {
         'checklist',
         'checker',
         'tab',
-        'button-tab'
+        'button-tab',
+        'input'
       ]
     }
   },

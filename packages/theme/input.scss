@@ -1,0 +1,32 @@
+@import './common/var.scss';
+
+.input{
+  display:flex;
+  align-items:center;
+  flex-direction:row;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  label{
+    display: inline-block;
+    font-size:$--input-label-font-size;
+    color:$--input-label-font-color;
+    margin-right:1em;
+  }
+  .input-area{
+    flex:1;
+    input{
+      font-size:$--input-label-font-size;
+      color:$--input-label-font-color;
+      width:100%;
+    }
+  }
+  .clear{
+    font-size:14px!important;
+    margin: 0 5px;
+  }
+  .error{
+    font-size:18px!important;
+    color:$--color-danger!important;
+    margin-left:10px;
+  }
+}

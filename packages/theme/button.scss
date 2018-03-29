@@ -8,6 +8,7 @@
   background: $--button-default-fill;
   color: $--button-default-color;
   transition:0.1s;
+  white-space: nowrap;
 }
 
 @mixin button-variant($color){

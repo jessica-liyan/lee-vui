@@ -8,6 +8,7 @@ import {Checker, CheckerItem} from './checker/index'
 import {Tab, TabItem} from './tab/index'
 import {ButtonTab, ButtonTabItem} from './button-tab/index'
 import {Flex, FlexItem} from './layout/index'
+import {Input} from './input/index'
 
 const components = [
   LyButton,
@@ -23,7 +24,8 @@ const components = [
   ButtonTab,
   ButtonTabItem,
   Flex,
-  FlexItem
+  FlexItem,
+  Input
 ]
 
 const install = function (Vue, opt) {
@@ -51,5 +53,6 @@ export default {
   ButtonTab,
   ButtonTabItem,
   Flex,
-  FlexItem
+  FlexItem,
+  Input
 }

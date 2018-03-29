@@ -1,5 +1,5 @@
 $--color-primary: #409EFF;
-$--color-danger: #F56C6C;
+$--color-danger: #ff6666;
 $--color-success: #67C23A;
 $--color-info: #909399;
 $--color-warning: #E6A23C;
@@ -124,6 +124,10 @@ $--button-tab-border: 1px solid $--color-gray;
 $--button-tab-border-radius: 6px;
 $--button-tab-round-border-radius: ($--button-tab-font-size + $--button-tab-padding-vertical*2 + 2)/2;
 $--button-tab-active-color: $--color-primary;
+
+// input
+$--input-label-font-size: 15px;
+$--input-label-font-color: $--color-3;
 
 
 

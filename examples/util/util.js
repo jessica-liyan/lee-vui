@@ -30,12 +30,13 @@ export default {
           selected7: {key: 'bj', value: '北京'},
           selected8: [{key: 'bj', value: '北京'}, {key: 'sh', value: '上海'}],
           tabs: 0, // tab
-          itemStyle: {
+          itemStyle: { // flex
             padding: '10px',
             fontSize: '14px',
             color: '#333',
             background: '#ddd'
-          }
+          },
+          inputval: '李成程'
         }
       },
       methods: {

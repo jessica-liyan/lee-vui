@@ -52,6 +52,10 @@ export default new Router({
     {
       path: `/input`,
       component: r => require.ensure([], () => r(require('../docs/input.md')))
+    },
+    {
+      path: `/selector`,
+      component: r => require.ensure([], () => r(require('../docs/selector.md')))
     }
   ]
 })

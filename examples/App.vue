@@ -46,7 +46,8 @@ export default {
         'checker',
         'tab',
         'button-tab',
-        'input'
+        'input',
+        'selector'
       ]
     }
   },

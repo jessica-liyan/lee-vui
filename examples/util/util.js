@@ -36,7 +36,8 @@ export default {
             color: '#333',
             background: '#ddd'
           },
-          inputval: '李成程'
+          inputval: '李成程',
+          empty: ''
         }
       },
       methods: {
@@ -59,6 +60,18 @@ export default {
         },
         itemHandle (val) {
           console.log('当前点击', val)
+        },
+        onInput (val) {
+          console.log('on-input', val)
+        },
+        onEnter (val) { // input onEnter
+          console.log('on-enter', val)
+        },
+        onFocus (val, e) { // input onEnter
+          console.log('on-focus', val, e)
+        },
+        onBlur (val, e) { // input onEnter
+          console.log('on-blur', val, e)
         }
       }
     })

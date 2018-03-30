@@ -29,4 +29,13 @@
     color:$--color-danger!important;
     margin-left:10px;
   }
+  &.single{
+    border: 1px solid $--color-gray;
+    border-radius:4px;
+    padding: $--input-padding-vertical $--input-padding-horizontal;
+    .iconfont{
+      font-size:18px;
+      color:$--color-gray;
+    }
+  }
 }

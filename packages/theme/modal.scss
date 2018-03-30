@@ -1,0 +1,17 @@
+@import './common/var.scss';
+
+.modal{
+  position:fixed;
+  background:#fff;
+  z-index:3;
+}
+.modal-mask{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  background:$--modal-mask-color;
+  z-index:2;
+}
+

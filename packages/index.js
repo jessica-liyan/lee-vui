@@ -10,6 +10,7 @@ import {ButtonTab, ButtonTabItem} from './button-tab/index'
 import {Flex, FlexItem} from './layout/index'
 import {Input} from './input/index'
 import {Selector} from './selector/index'
+import {Modal} from './modal/index'
 
 const components = [
   LyButton,
@@ -27,7 +28,8 @@ const components = [
   Flex,
   FlexItem,
   Input,
-  Selector
+  Selector,
+  Modal
 ]
 
 const install = function (Vue, opt) {
@@ -57,5 +59,6 @@ export default {
   Flex,
   FlexItem,
   Input,
-  Selector
+  Selector,
+  Modal
 }

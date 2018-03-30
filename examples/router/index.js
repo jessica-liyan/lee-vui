@@ -56,6 +56,10 @@ export default new Router({
     {
       path: `/selector`,
       component: r => require.ensure([], () => r(require('../docs/selector.md')))
+    },
+    {
+      path: `/modal`,
+      component: r => require.ensure([], () => r(require('../docs/modal.md')))
     }
   ]
 })

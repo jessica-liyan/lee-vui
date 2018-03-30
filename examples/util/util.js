@@ -5,6 +5,8 @@ export default {
         return {
           show: false,
           show1: false,
+          show2: false,
+          show3: false,
           radio: '微信', // radio
           radio1: 'alipay',
           isCheck: true, // switch

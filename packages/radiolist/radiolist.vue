@@ -51,6 +51,9 @@ export default {
     createId
   },
   watch: {
+    value (val) {
+      this.currentValue = val
+    },
     currentValue (newVal) {
       // 参数一个，是选中的key
       this.$emit('input', newVal)

@@ -11,6 +11,7 @@ import {Flex, FlexItem} from './layout/index'
 import {Input} from './input/index'
 import {Selector} from './selector/index'
 import {Modal} from './modal/index'
+import {Picker} from './picker/index'
 
 const components = [
   LyButton,
@@ -29,7 +30,8 @@ const components = [
   FlexItem,
   Input,
   Selector,
-  Modal
+  Modal,
+  Picker
 ]
 
 const install = function (Vue, opt) {
@@ -60,5 +62,6 @@ export default {
   FlexItem,
   Input,
   Selector,
-  Modal
+  Modal,
+  Picker
 }

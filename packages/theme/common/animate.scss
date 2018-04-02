@@ -56,6 +56,21 @@
   transform:translateX(0);
 }
 
+.popFromCenter{
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  right:auto;
+  bottom:auto;
+  transition:0.3s;
+  opacity:0;
+  pointer-events: none;
+}
+.popFromCenter.animate{
+  opacity:1;
+  z-index:3;
+}
+
 .fade{
   opacity:0;
   transition:0.3s ease;

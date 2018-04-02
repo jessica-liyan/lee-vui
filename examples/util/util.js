@@ -7,6 +7,8 @@ export default {
           show1: false,
           show2: false,
           show3: false,
+          show4: false,
+          show5: false,
           radio: '微信', // radio
           radio1: 'alipay',
           isCheck: true, // switch
@@ -39,7 +41,11 @@ export default {
             background: '#ddd'
           },
           inputval: '李成程',
-          empty: ''
+          empty: '',
+          cites: [{key: 'bj', value: '北京'}, {key: 'sh', value: '上海'}, {key: 'sz', value: '深圳'}, {key: 'gz', value: '广州'}, {key: 'wh', value: '武汉'}],
+          year: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022],
+          year1: '2020',
+          year2: [[2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022], [1, 2, 3, 4, 5, 6]]
         }
       },
       methods: {
@@ -74,6 +80,12 @@ export default {
         },
         onBlur (val, e) { // input onEnter
           console.log('on-blur', val, e)
+        },
+        onshow (val) { // modal
+          console.log('on-show', val)
+        },
+        onhide (val) { // modal
+          console.log('on-hide', val)
         }
       }
     })

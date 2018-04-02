@@ -30,7 +30,7 @@ $--line1px-color: #d9d9d9;
     right:0;
     top:0;
     transform:scaleY(0.5);
-    z-index:99;
+    z-index:0;
   }
 }
 @mixin line-bottom{
@@ -44,7 +44,7 @@ $--line1px-color: #d9d9d9;
     right:0;
     bottom:0;
     transform:scaleY(0.5);
-    z-index:99;
+    z-index:0;
   }
 }
 
@@ -137,6 +137,8 @@ $--selector-label-font-color: $--color-3;
 
 // modal
 $--modal-mask-color: rgba(0,0,0,0.5);
+
+// picker
 
 
 

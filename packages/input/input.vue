@@ -108,6 +108,9 @@ export default {
     }
   },
   watch: {
+    value (val) {
+      this.currentValue = val
+    },
     currentValue (val) {
       this.$emit('input', val)
     }

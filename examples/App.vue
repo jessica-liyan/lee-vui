@@ -48,7 +48,8 @@ export default {
         'button-tab',
         'input',
         'selector',
-        'modal'
+        'modal',
+        'picker'
       ]
     }
   },

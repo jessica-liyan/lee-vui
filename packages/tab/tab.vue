@@ -49,6 +49,9 @@ export default {
     this.updateIndex()
   },
   watch: {
+    value (val) {
+      this.currentValue = val
+    },
     currentIndex (val, oldVal) {
       oldVal > -1 && (this.$children[oldVal].isSelected = false)
       val > -1 && (this.$children[val].isSelected = true)

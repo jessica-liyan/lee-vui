@@ -51,8 +51,6 @@ export default {
         marginRight: this.$parent.labelMarginRight
       }
     }
-  },
-  methods: {
   }
 }
 </script>

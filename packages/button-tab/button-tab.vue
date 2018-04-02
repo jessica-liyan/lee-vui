@@ -29,6 +29,9 @@ export default {
     }
   },
   watch: {
+    value (val) {
+      this.currentIndex = val
+    },
     currentIndex (val, oldVal) {
       this.$children[val].isSelected = true
       this.$children[oldVal].isSelected = false

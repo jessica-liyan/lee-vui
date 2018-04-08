@@ -1,0 +1,25 @@
+@import './common/var.scss';
+
+.toast{
+  position:fixed;
+  text-align:center;
+  z-index: 999;
+  .toast-info{
+    display:inline-block;
+    font-size:$--toast-font-size;
+    color:$--toast-font-color;
+    border-radius:$--toast-border-radius;
+    background:$--toast-background-color;
+    padding:8px 1em;
+  }  
+}
+.slideFromBottom.animate{
+  bottom:50px;
+  transform:translateY(0);
+}
+.slideFromTop.animate{
+  top:50px;
+  transform:translateY(0);
+}
+
+

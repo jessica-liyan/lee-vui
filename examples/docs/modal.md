@@ -79,7 +79,7 @@
 </modal>
 ```
 
-<ly-button @click="show5 = true">中间弹出</ly-button>
+<ly-button @click="show5 = true">中间弹出，事件监听</ly-button>
 <modal direction="center" v-model="show5" height="300px" width="300px" @on-show="onshow" @on-hide="onhide">
   <span>弹窗内容</span>
   <ly-button @click="show5 = false">关闭</ly-button>

@@ -12,6 +12,8 @@ import {Input} from './input/index'
 import {Selector} from './selector/index'
 import {Modal} from './modal/index'
 import {Picker} from './picker/index'
+import {Toast} from './toast/index'
+import ToastPlugin from './toast/toastPlugin'
 
 const components = [
   LyButton,
@@ -31,37 +33,18 @@ const components = [
   Input,
   Selector,
   Modal,
-  Picker
+  Picker,
+  Toast
 ]
 
-const install = function (Vue, opt) {
-  components.map((component, idx) => {
-    Vue.component(component.name, component)
-  })
+// 插件集合
+export {ToastPlugin}
 
-  if (typeof window !== 'undefined' && window.Vue) {
-    install(window.Vue)
-  }
-}
-
+// 组件集合
 export default {
-  install,
-  LyButton,
-  RadioList,
-  Cell,
-  Group,
-  LySwitch,
-  CheckList,
-  Checker,
-  CheckerItem,
-  Tab,
-  TabItem,
-  ButtonTab,
-  ButtonTabItem,
-  Flex,
-  FlexItem,
-  Input,
-  Selector,
-  Modal,
-  Picker
+  install (Vue, option) {
+    components.map((component, idx) => {
+      Vue.component(component.name, component)
+    })
+  }
 }

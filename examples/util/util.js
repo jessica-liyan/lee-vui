@@ -125,6 +125,19 @@ export default {
         },
         onhide (val) { // modal
           console.log('on-hide', val)
+        },
+        usePlugin () { // toastPlugin
+          this.$toast.show({
+            text: '这是一个插件中的内容',
+            duration: 4000,
+            position: 'bottom',
+            onShow: function () {
+              console.log('plugin onshow')
+            },
+            onHide: function () {
+              console.log('plugin onhide')
+            }
+          })
         }
       }
     })

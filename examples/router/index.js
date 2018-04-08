@@ -64,6 +64,10 @@ export default new Router({
     {
       path: `/picker`,
       component: r => require.ensure([], () => r(require('../docs/picker.md')))
+    },
+    {
+      path: `/toast`,
+      component: r => require.ensure([], () => r(require('../docs/toast.md')))
     }
   ]
 })

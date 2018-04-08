@@ -11,15 +11,15 @@
     border-radius:$--toast-border-radius;
     background:$--toast-background-color;
     padding:8px 1em;
-  }  
-}
-.slideFromBottom.animate{
-  bottom:50px;
-  transform:translateY(0);
-}
-.slideFromTop.animate{
-  top:50px;
-  transform:translateY(0);
+  }
+  &.slideFromBottom.animate{
+    bottom:50px;
+    transform:translateY(0);
+  }
+  &.slideFromTop.animate{
+    top:50px;
+    transform:translateY(0);
+  }
 }
 
 

@@ -13,6 +13,10 @@
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js"
   },
+  "files": [
+    "packages",
+    "index.js"
+  ],
   "dependencies": {
     "highlight.js": "^9.12.0",
     "vue": "^2.5.2",

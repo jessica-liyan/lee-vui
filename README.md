@@ -3,7 +3,7 @@
 基于vue构建的移动端UI库
 
 ## 文档链接
-[Documentation, demos, and guides](https://jessica-liyan.github.io/ng5-ui/)
+[文档链接](https://jessica-liyan.github.io/ng5-ui/)
 
 ## 安装
 ```js

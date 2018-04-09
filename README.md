@@ -1,30 +1,29 @@
-# vui
+# lee-vui
+[![npm version](https://badge.fury.io/js/lee-vui.svg)](https://www.npmjs.com/package/lee-vui)
+基于vue构建的移动端UI库
 
-> A Vue.js project
+## 
+[Documentation, demos, and guides](https://jessica-liyan.github.io/ng5-ui/)
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+## 安装
+```js
+npm install lee-vui --save
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# 使用全局组件
+```js
+import vui from 'lee-vui'
+Vue.use(vui)
+```
+
+# 使用单独某一组件
+```js
+import {LyButton} from 'lee-vui'
+vue.use(LyButton)
+```
+
+# 使用插件
+```js
+import {ToastPlugin} from 'lee-vui'
+vue.use(ToastPlugin)
+```

@@ -1,7 +1,7 @@
-import Switch from './switch'
+import LySwitch from './switch'
 
-Switch.install = function (Vue, opt) {
-  Vue.component(Switch.name, Switch)
+LySwitch.install = function (Vue, opt) {
+  Vue.component(LySwitch.name, LySwitch)
 }
 
-export default Switch
+export {LySwitch}

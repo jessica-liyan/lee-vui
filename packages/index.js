@@ -1,9 +1,9 @@
-import LyButton from './button/index'
-import RadioList from './radiolist/index.js'
-import Cell from './cell/index'
-import Group from './group/index'
-import LySwitch from './switch/index'
-import CheckList from './checklist/index'
+import {LyButton} from './button/index'
+import {RadioList} from './radiolist/index.js'
+import {Cell} from './cell/index'
+import {Group} from './group/index'
+import {LySwitch} from './switch/index'
+import {CheckList} from './checklist/index'
 import {Checker, CheckerItem} from './checker/index'
 import {Tab, TabItem} from './tab/index'
 import {ButtonTab, ButtonTabItem} from './button-tab/index'
@@ -15,6 +15,10 @@ import {Picker} from './picker/index'
 import {Toast} from './toast/index'
 import ToastPlugin from './toast/toastPlugin'
 
+// 插件集合
+export {ToastPlugin}
+
+// 组件集合
 const components = [
   LyButton,
   RadioList,
@@ -36,15 +40,36 @@ const components = [
   Picker,
   Toast
 ]
+const install = function (Vue, option) {
+  components.map((component, idx) => {
+    Vue.component(component.name, component)
+  })
 
-// 插件集合
-export {ToastPlugin}
-
-// 组件集合
-export default {
-  install (Vue, option) {
-    components.map((component, idx) => {
-      Vue.component(component.name, component)
-    })
+  if (typeof window !== 'undefined' && window.Vue) {
+    install(window.Vue)
   }
+}
+export default {
+  install
+}
+export {
+  LyButton,
+  RadioList,
+  Cell,
+  Group,
+  LySwitch,
+  CheckList,
+  Checker,
+  CheckerItem,
+  Tab,
+  TabItem,
+  ButtonTab,
+  ButtonTabItem,
+  Flex,
+  FlexItem,
+  Input,
+  Selector,
+  Modal,
+  Picker,
+  Toast
 }

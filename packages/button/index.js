@@ -4,4 +4,4 @@ LyButton.install = function (Vue, opt) {
   Vue.component(LyButton.name, LyButton)
 }
 
-export default LyButton
+export {LyButton}

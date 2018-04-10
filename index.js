@@ -15,6 +15,8 @@ import {Picker} from './packages/picker/index'
 import {Toast} from './packages/toast/index'
 import ToastPlugin from './packages/toast/toastPlugin'
 
+import './packages/theme/common/iconfont.css'
+
 // 插件集合
 export {ToastPlugin}
 

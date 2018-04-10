@@ -36,8 +36,9 @@ export default {
       chosen: 'male',
       isToggle: false,
       compos: [
-        'layout',
         'button',
+        'layout',
+        'icon',
         'group',
         'cell',
         'switch',
@@ -48,8 +49,8 @@ export default {
         'button-tab',
         'input',
         'selector',
-        'modal',
         'picker',
+        'modal',
         'toast'
       ]
     }

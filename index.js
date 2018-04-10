@@ -1,5 +1,6 @@
 import {LyButton} from './packages/button/index'
 import {RadioList} from './packages/radiolist/index.js'
+import {Icon} from './packages/icon/index'
 import {Cell} from './packages/cell/index'
 import {Group} from './packages/group/index'
 import {LySwitch} from './packages/switch/index'
@@ -15,8 +16,6 @@ import {Picker} from './packages/picker/index'
 import {Toast} from './packages/toast/index'
 import ToastPlugin from './packages/toast/toastPlugin'
 
-import './packages/theme/common/iconfont.css'
-
 // 插件集合
 export {ToastPlugin}
 
@@ -24,6 +23,7 @@ export {ToastPlugin}
 const components = [
   LyButton,
   RadioList,
+  Icon,
   Cell,
   Group,
   LySwitch,
@@ -57,6 +57,7 @@ export default {
 export {
   LyButton,
   RadioList,
+  Icon,
   Cell,
   Group,
   LySwitch,

@@ -13,7 +13,7 @@
           :value="getKey(item)"
           :disabled="isDisabled(getKey(item))"
           v-model="currentValue">
-        <i class="iconfont icon-check"></i>
+        <icon name="check"></icon>
       </cell>
     </label>
   </div>

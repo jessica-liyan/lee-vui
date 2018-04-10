@@ -19,10 +19,7 @@
     <div class="cell-bd" :style="{'text-align': valueAlign}">
       <span v-if="value" class="v-m">{{value}}</span>
       <slot></slot>
-      <i v-if="isLink"
-        class="iconfont icon-right v-m"
-        :class="arrow ? (arrow === 'up' ? 'up' : 'down'): ''"
-      ></i>
+      <icon name="right" v-if="isLink" :class="arrow ? (arrow === 'up' ? 'up' : 'down'): ''"></icon>
     </div>
   </div>
 </template>

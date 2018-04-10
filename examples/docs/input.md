@@ -72,11 +72,11 @@
 ### icon
 <group>
   <cell>
-    <ly-input icon="icon-user" title="用户名" :label-width="4">
+    <ly-input icon="user" title="用户名" :label-width="4">
     </ly-input>
   </cell>
   <cell>
-    <ly-input icon="icon-password" title="密码" :label-width="4" type="password">
+    <ly-input icon="password" title="密码" :label-width="4" type="password">
     </ly-input>
   </cell>
   <cell>
@@ -104,11 +104,11 @@
 ```html
 <group>
   <cell>
-    <ly-input icon="icon-user" title="用户名" :label-width="4">
+    <ly-input icon="user" title="用户名" :label-width="4">
     </ly-input>
   </cell>
   <cell>
-    <ly-input icon="icon-password" title="密码" :label-width="4" type="password">
+    <ly-input icon="password" title="密码" :label-width="4" type="password">
     </ly-input>
   </cell>
   <cell>
@@ -129,9 +129,9 @@
 ```
 
 ### 搜索框
-<ly-input icon="icon-search" single></ly-input>
-<ly-input icon="icon-user" single></ly-input>
-<ly-input icon="icon-search" single iconRight></ly-input>
+<ly-input icon="search" single></ly-input>
+<ly-input icon="user" single></ly-input>
+<ly-input icon="search" single iconRight></ly-input>
 
 <ul class="description">
   <li><code>single</code>boolean，单独input</li>
@@ -139,9 +139,9 @@
 </ul>
 
 ```html
-  <ly-input icon="icon-search" single></ly-input>
-  <ly-input icon="icon-user" single></ly-input>
-  <ly-input icon="icon-search" single iconRight></ly-input>
+  <ly-input icon="search" single></ly-input>
+  <ly-input icon="user" single></ly-input>
+  <ly-input icon="search" single iconRight></ly-input>
 ```
 
 ### 内置验证器

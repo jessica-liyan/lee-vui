@@ -57,9 +57,9 @@
 <group style="margin-bottom:1rem;">
   <radio-list
     :options="[
-    {key: 'user', value: '用户名', icon: 'icon-user'},
-    {key: 'password', value: '密码', icon: 'icon-password'},
-    {key: 'location', value: '家庭地址', icon: 'icon-location'}]"
+    {key: 'user', value: '用户名', icon: 'user'},
+    {key: 'password', value: '密码', icon: 'password'},
+    {key: 'location', value: '家庭地址', icon: 'location'}]"
     round
   ></radio-list>
 </group>
@@ -67,9 +67,9 @@
 <group>
   <radio-list
     :options="[
-    {key: 'alipay', value: '支付宝', icon: './static/img/alipay.png'},
-    {key: 'wx', value: '微信', icon: './static/img/wx.png'},
-    {key: 'qq', value: 'QQ钱包', icon: './static/img/qq.png'}]"
+    {key: 'alipay', value: '支付宝', iconImg: './static/img/alipay.png'},
+    {key: 'wx', value: '微信', iconImg: './static/img/wx.png'},
+    {key: 'qq', value: 'QQ钱包', iconImg: './static/img/qq.png'}]"
     round
   ></radio-list>
 </group>
@@ -77,27 +77,24 @@
 ```html
   <group style="margin-bottom:1rem;">
     <radio-list
-      round
-      value="user"
       :options="[
-      {key: 'user', value: '用户名', icon: 'icon-user'},
-      {key: 'password', value: '密码', icon: 'icon-password'},
-      {key: 'location', value: '家庭地址', icon: 'icon-location'}
-    ]"></radio-list>
+      {key: 'user', value: '用户名', icon: 'user'},
+      {key: 'password', value: '密码', icon: 'password'},
+      {key: 'location', value: '家庭地址', icon: 'location'}]"
+      round
+    ></radio-list>
   </group>
 
   <group>
     <radio-list
-      round
-      value="alipay"
       :options="[
-      {key: 'alipay', value: '支付宝', icon: './static/img/alipay.png'},
-      {key: 'wx', value: '微信', icon: './static/img/wx.png'},
-      {key: 'qq', value: 'QQ钱包', icon: './static/img/QQ.png'},
-    ]"></radio-list>
+      {key: 'alipay', value: '支付宝', iconImg: './static/img/alipay.png'},
+      {key: 'wx', value: '微信', iconImg: './static/img/wx.png'},
+      {key: 'qq', value: 'QQ钱包', iconImg: './static/img/qq.png'}]"
+      round
+    ></radio-list>
   </group>
 ```
-
 
 ### 监听input事件
 <div style="margin:10px">当前选中值：{{radio}}</div>

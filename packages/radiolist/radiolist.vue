@@ -10,15 +10,15 @@
     >
       <cell :title="getValue(item)">
         <slot slot="icon">
-          <img :src="item.icon" alt="" v-if="typeof item === 'object' && item.icon && item.icon.substr(0,4) !== 'icon'">
-          <i class="iconfont" :class="item.icon" v-if="typeof item === 'object' && item.icon && item.icon.substr(0,4) == 'icon'"></i>
+          <img :src="item.iconImg" v-if="item.iconImg">
+          <icon :name="item.icon" v-if="item.icon"></icon>
         </slot>
         <input type="radio"
           :id="`radio-${uuid}-${index}`"
           :value="getKey(item)"
           v-model="currentValue"
         >
-        <i class="iconfont icon-check"></i>
+        <icon name="check"></icon>
       </cell>
     </label>
   </div>

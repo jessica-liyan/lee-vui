@@ -1,7 +1,7 @@
 <template>
   <div class="input" :class="{'single': single}">
     <img :src="iconImg" alt="" v-show="iconImg" style="width:2em;height:2em;margin-right:10px;">
-    <i :class="`iconfont ${icon}`" v-show="icon" style="margin-right:10px;" v-if="!iconRight"></i>
+    <icon :name="icon"  v-show="icon" style="margin-right:10px;" v-if="!iconRight"></icon>
     <slot name="icon"></slot>
     <label :style="{width: `${labelWidth}em`, textAlign: labelAlign}" v-show="title">{{title}}</label>
     <div class="input-area">
@@ -18,14 +18,14 @@
         @input="onInput"
       >
     </div>
-    <i class="iconfont icon-delete clear"
+    <icon name="delete" class="clear"
       v-show="showClear && currentValue && currentValue !== '' && !disabled && !readonly"
-      @click="clear"
-    ></i>
-    <i class="iconfont icon-warning error"
+      @click.native="clear"
+    ></icon>
+    <icon name="warning" class="error"
       v-show="validate && currentValue && currentValue !== '' && showError && !disabled && !readonly"
-    ></i>
-    <i :class="`iconfont ${icon}`" v-show="icon" v-if="iconRight"></i>
+    ></icon>
+    <icon :name="icon" v-show="icon" v-if="iconRight"></icon>
     <slot name="right"></slot>
   </div>
 </template>

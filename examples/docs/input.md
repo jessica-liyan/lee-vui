@@ -112,7 +112,7 @@
     </ly-input>
   </cell>
   <cell>
-    <ly-input iconImg="./static/img/alipay.png" title="支付宝" :label-width="4" type="password">
+    <ly-input iconImg="../../static/img/alipay.png" title="支付宝" :label-width="4" type="password">
     </ly-input>
   </cell>
   <cell>

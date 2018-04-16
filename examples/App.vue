@@ -5,8 +5,8 @@
         v-bind:class="{active: isToggle}"
         v-on:click="toggle"
       >
-        <i class="iconfont icon-list"></i>
-        <i class="iconfont icon-close"></i>
+        <icon name="list"></icon>
+        <icon name="close"></icon>
       </button>
       <h1>vui</h1>
     </div>
